@@ -1,0 +1,18 @@
+# Compiled binaries
+bin/
+*.out
+
+# Logs
+logs/
+
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# List of PIDs
+pids.txt
+
+# Generated executable for restart function
+restart.sh

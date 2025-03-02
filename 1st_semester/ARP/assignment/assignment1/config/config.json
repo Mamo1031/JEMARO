@@ -1,0 +1,9 @@
+{
+    "NumObstacles": 10,
+    "NumTargets": 10,
+    "DroneInitialPosition": {
+        "Position" : [55.0, 13.0],
+        "Velocity" : [0.0, 0.0],
+        "Force" : [0.0, 0.0]
+    }
+}
