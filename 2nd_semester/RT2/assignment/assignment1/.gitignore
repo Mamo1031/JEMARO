@@ -1,0 +1,20 @@
+# Build related
+build/
+devel/
+install/
+
+# Documentation related
+# Sphinx build directory
+_build/
+# Doxygen generated files
+*/doxygen/html/
+*/doxygen/latex/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS specific files
+.DS_Store
+Thumbs.db
