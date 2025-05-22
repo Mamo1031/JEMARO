@@ -1,0 +1,26 @@
+<launch>
+  <!-- Start the Orchestration Manager node-->
+  <node name="OrchestrationManager" pkg="group_e" type="OrchestrationManager.py" output="screen">
+  </node>  
+  
+  <!-- Start the five TIAGo robot nodes -->
+  <node name="TIAGo_1" pkg="group_e" type="TIAGo.py" output="screen">
+    <param name="tiago_id" value="1" />
+  </node>
+  <node name="TIAGo_2" pkg="group_e" type="TIAGo.py" output="screen">
+    <param name="tiago_id" value="2" />
+  </node>
+  <node name="TIAGo_3" pkg="group_e" type="TIAGo.py" output="screen">
+    <param name="tiago_id" value="3" />
+  </node>
+  <node name="TIAGo_4" pkg="group_e" type="TIAGo.py" output="screen">
+    <param name="tiago_id" value="4" />
+  </node>
+  <node name="TIAGo_5" pkg="group_e" type="TIAGo.py" output="screen">
+    <param name="tiago_id" value="5" />
+  </node>
+
+  <!-- Start the Point of Sale node -->
+  <node name="POS_1" pkg="group_e" type="PointOfSale.py" output="screen">
+  </node>
+</launch>
