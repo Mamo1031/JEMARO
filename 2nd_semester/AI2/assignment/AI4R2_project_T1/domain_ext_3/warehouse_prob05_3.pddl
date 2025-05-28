@@ -1,0 +1,40 @@
+(define (problem warehouse-05-ext3)
+  (:domain warehouse-crates-3)
+  (:objects 
+    m1 m2 - mover
+    c1 c2 - crate
+    l - loader
+    st1 st2 - charging_station
+  )
+  (:init
+    (independent m1 m2)
+    (independent m2 m1)
+    (empty m1)
+    (empty m2)
+    (at_pause m1)
+    (at_pause m2)
+    (at_loading_bay m1)
+    (at_loading_bay m2)
+    (empty l)
+    (idle l)
+    (on_shelf c1)
+    (on_shelf c2)
+    (pickable c1)
+    (pickable c2)
+    (= (weight c1) 70)
+    (= (weight c2) 20)
+    (= (distance c1) 10)
+    (= (distance c2) 20)
+    (free st1)
+    (free st2)
+    (= (battery-capacity m1) 20)
+    (= (battery-capacity m2) 20)
+    (= (charging_vel st1) 2)
+    (= (charging_vel st2) 2)
+    (= (battery m1) 20)
+    (= (battery m2) 20)
+    )
+  (:goal
+    (and (loaded c1)
+        (loaded c2)    ))
+  )
